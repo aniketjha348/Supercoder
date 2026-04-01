@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "totalSkills": 95,
+  "version": "1.2.0",
+  "totalSkills": 97,
   "categories": {
     "process": {
       "description": "Development workflow skills",
@@ -10,6 +10,10 @@
         "requesting-code-review", "subagent-driven-development", "dispatching-parallel-agents",
         "finishing-a-development-branch", "subagent-switching", "team-memory"
       ]
+    },
+    "ai-developer": {
+      "description": "AI-powered complete project development - SDE + fullstack combined",
+      "skills": ["ai-developer"]
     },
     "tool": {
       "description": "File and system operations",
@@ -22,11 +26,11 @@
     },
     "languages": {
       "description": "Programming languages",
-      "skills": ["python", "go", "java", "typescript", "rust", "cpp"]
+      "skills": ["python", "go", "java", "typescript", "rust", "cpp", "javascript"]
     },
     "frameworks": {
       "description": "Web frameworks",
-      "skills": ["django", "fastapi", "spring", "react", "vue", "angular"]
+      "skills": ["django", "fastapi", "spring", "react", "vue", "angular", "nextjs", "express"]
     },
     "databases": {
       "description": "Database technologies",
@@ -70,12 +74,15 @@
     }
   },
   "keywords": {
+    "ai-developer": ["build project", "fullstack sde", "production project", "complete application", "end to end", "real world software", "build complete project", "create fullstack app", "make a web app", "build a web application", "create production app", "build real software", "full stack project", "complete project", "ship product", "deploy project", "make complete app"],
     "python": ["python", "data science", "automation", "scripting", "pandas", "numpy"],
-    "javascript": ["javascript", "js", "node", "frontend"],
+    "javascript": ["javascript", "js", "node", "frontend", "vanilla js"],
     "typescript": ["typescript", "ts", "typed javascript"],
     "react": ["react", "reactjs", "frontend", "ui", "components"],
     "vue": ["vue", "vuejs", "frontend"],
     "angular": ["angular", "frontend"],
+    "nextjs": ["nextjs", "next.js", "react framework", "ssr"],
+    "express": ["express", "expressjs", "node api", "node backend"],
     "django": ["django", "python web", "python backend"],
     "fastapi": ["fastapi", "python api", "python backend"],
     "spring": ["spring", "java backend", "java enterprise"],

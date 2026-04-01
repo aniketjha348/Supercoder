@@ -1,6 +1,6 @@
 {
   "name": "supercoder",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Your AI's own software development team - 100+ specialized AI agents for complete software engineering",
   "bin": {
     "supercoder": "./bin/supercoder.js"
@@ -10,6 +10,7 @@
   },
   "scripts": {
     "postinstall": "node bin/supercoder.js npm-install",
+    "install:all": "node bin/supercoder.js install all",
     "install:codex": "node bin/supercoder.js install codex",
     "install:claude": "node bin/supercoder.js install claude",
     "install:opencode": "node bin/supercoder.js install opencode",
@@ -17,6 +18,7 @@
     "install:windsurf": "node bin/supercoder.js install windsurf",
     "install:gemini": "node bin/supercoder.js install gemini",
     "install:trae": "node bin/supercoder.js install trae",
+    "global": "npm install -g",
     "list": "node bin/supercoder.js list",
     "clean": "node bin/supercoder.js clean"
   },

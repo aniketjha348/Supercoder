@@ -3,20 +3,21 @@
 **Your AI's Own Software Development Team** - 100+ specialized AI agents for complete software engineering.
 
 ![Supercoder](https://img.shields.io/badge/Supercoder-AI%20Team-blue)
-![Version](https://img.shields.io/badge/Version-1.1.0-green)
+![Version](https://img.shields.io/badge/Version-1.2.0-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Skills](https://img.shields.io/badge/Skills-95-brightgreen)
+![Skills](https://img.shields.io/badge/Skills-97-brightgreen)
 
 ## What is Supercoder?
 
-Supercoder gives any AI coding agent a complete software development team with **95+ specialized skills**. It works with **Codex, Claude Code, Cursor, Windsurf, OpenCode, Gemini CLI, Trae, Continue, VS Code**, and more.
+Supercoder gives any AI coding agent a complete software development team with **97+ specialized skills**. It works with **Codex, Claude Code, Cursor, Windsurf, OpenCode, Gemini CLI, Trae, Continue, VS Code**, and more.
 
 ## Key Features
 
-- **95+ Skills** - From Python to Game Dev to SWE Pro
+- **97+ Skills** - From Python to Game Dev to SWE Pro
 - **Subagent Switching** - Delegate to specialized agents
 - **Team Memory** - Agents talk to each other via shared memory
 - **Skill Auto-Detection** - AI loads relevant skills automatically
+- **AI Developer Mode** - Build complete production-ready projects
 - **Git Clone + Symlink** - Install via git clone for your AI agent
 
 ## Install (Git Clone + Symlink)
