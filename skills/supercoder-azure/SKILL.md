@@ -1,3 +1,13 @@
+---
+name: supercoder-azure
+description: Use when working with Microsoft Azure cloud services
+triggers:
+  - "azure"
+  - "microsoft cloud"
+  - "azure functions"
+  - "blob storage"
+---
+
 # Supercoder Azure
 
 Microsoft Azure specialist.

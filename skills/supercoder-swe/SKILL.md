@@ -1,3 +1,12 @@
+---
+name: supercoder-swe
+description: Use when writing production code, software engineering best practices
+triggers:
+  - "swe"
+  - "software engineer"
+  - "production code"
+---
+
 # Supercoder SWE
 
 Software Engineer - industry standard role.

@@ -1,3 +1,12 @@
+---
+name: supercoder-swe-expert
+description: Use when doing distinguished engineer level work, company-wide technical direction
+triggers:
+  - "distinguished"
+  - "technical fellow"
+  - "vp engineering"
+---
+
 # Supercoder SWE Expert
 
 Distinguished Engineer / Technical Fellow.

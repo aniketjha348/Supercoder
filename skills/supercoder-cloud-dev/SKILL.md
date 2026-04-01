@@ -1,3 +1,12 @@
+---
+name: supercoder-cloud-dev
+description: Use when building cloud-native applications, serverless, or cloud architecture
+triggers:
+  - "cloud-native"
+  - "serverless"
+  - "cloud developer"
+---
+
 # Supercoder Cloud Dev
 
 Cloud Developer - build and deploy cloud-native applications.

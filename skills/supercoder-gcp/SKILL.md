@@ -1,3 +1,13 @@
+---
+name: supercoder-gcp
+description: Use when working with Google Cloud Platform
+triggers:
+  - "gcp"
+  - "google cloud"
+  - "compute engine"
+  - "cloud storage"
+---
+
 # Supercoder GCP
 
 Google Cloud Platform specialist.

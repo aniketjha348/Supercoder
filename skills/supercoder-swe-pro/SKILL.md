@@ -1,3 +1,13 @@
+---
+name: supercoder-swe-pro
+description: Use when doing senior-level architecture, technical leadership
+triggers:
+  - "swe pro"
+  - "senior staff"
+  - "principal"
+  - "architecture"
+---
+
 # Supercoder SWE Pro
 
 Senior Staff Engineer / Principal Engineer.

@@ -1,3 +1,14 @@
+---
+name: supercoder-fullstack
+description: Use when building full-stack web applications with frontend and backend
+triggers:
+  - "fullstack"
+  - "frontend"
+  - "backend"
+  - "mern"
+  - "mean"
+---
+
 # Supercoder Fullstack
 
 Full Stack Developer - frontend + backend + database.

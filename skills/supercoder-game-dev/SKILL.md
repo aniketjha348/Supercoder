@@ -1,3 +1,14 @@
+---
+name: supercoder-game-dev
+description: Use when building games with Unity, Unreal, or other game engines
+triggers:
+  - "game"
+  - "gaming"
+  - "unity"
+  - "unreal"
+  - "game development"
+---
+
 # Supercoder Game Dev
 
 Game Developer - build games for various platforms.

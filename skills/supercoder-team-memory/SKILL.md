@@ -1,3 +1,12 @@
+---
+name: supercoder-team-memory
+description: Use when agents need to share data or communicate with each other
+triggers:
+  - "shared memory"
+  - "team communication"
+  - "inter-agent"
+---
+
 # Supercoder Team Memory
 
 Inter-agent shared memory for team collaboration.

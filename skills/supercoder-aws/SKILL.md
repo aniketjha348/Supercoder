@@ -1,3 +1,15 @@
+---
+name: supercoder-aws
+description: Use when working with AWS cloud services, EC2, S3, Lambda, etc.
+triggers:
+  - "AWS"
+  - "amazon web services"
+  - "ec2"
+  - "s3"
+  - "lambda"
+  - "cloud"
+---
+
 # Supercoder AWS
 
 Amazon Web Services specialist.

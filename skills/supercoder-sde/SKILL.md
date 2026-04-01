@@ -1,3 +1,14 @@
+---
+name: supercoder-sde
+description: Use when preparing for SDE interviews, practicing DSA, or system design
+triggers:
+  - "sde"
+  - "interview"
+  - "dsa"
+  - "algorithm"
+  - "system design"
+---
+
 # Supercoder SDE
 
 Software Development Engineer - generalist developer role.

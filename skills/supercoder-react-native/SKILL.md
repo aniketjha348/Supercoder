@@ -1,3 +1,12 @@
+---
+name: supercoder-react-native
+description: Use when building cross-platform mobile apps with React Native
+triggers:
+  - "react native"
+  - "rn"
+  - "mobile app"
+---
+
 # Supercoder React Native
 
 Cross-platform mobile development with React Native.

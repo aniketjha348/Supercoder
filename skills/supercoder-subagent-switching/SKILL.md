@@ -1,3 +1,13 @@
+---
+name: supercoder-subagent-switching
+description: Use when switching between specialized subagents or delegating tasks
+triggers:
+  - "delegate"
+  - "subagent"
+  - "switch agent"
+  - "orchestrate"
+---
+
 # Supercoder Subagent Switching
 
 Switch between specialized subagents for different tasks.

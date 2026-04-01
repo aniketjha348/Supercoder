@@ -1,3 +1,14 @@
+---
+name: supercoder-ai
+description: Use when building AI applications, AI agents, or integrating LLMs
+triggers:
+  - "AI"
+  - "artificial intelligence"
+  - "AI app"
+  - "AI agent"
+  - "openai"
+---
+
 # Supercoder AI Engineering
 
 AI application development specialist.

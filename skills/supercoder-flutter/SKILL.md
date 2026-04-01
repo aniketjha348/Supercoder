@@ -1,3 +1,12 @@
+---
+name: supercoder-flutter
+description: Use when building cross-platform mobile apps with Flutter
+triggers:
+  - "flutter"
+  - "dart"
+  - "cross-platform mobile"
+---
+
 # Supercoder Flutter
 
 Cross-platform mobile development with Flutter.

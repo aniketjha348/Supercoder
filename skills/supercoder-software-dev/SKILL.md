@@ -1,3 +1,11 @@
+---
+name: supercoder-software-dev
+description: Use for general software development tasks
+triggers:
+  - "software developer"
+  - "development"
+---
+
 # Supercoder Software Dev
 
 General Software Developer - versatile development role.
