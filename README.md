@@ -1,16 +1,39 @@
 # Supercoder
 
-**Your AI's Own Software Development Team** - 92 specialized AI agents for complete software engineering.
+**Your AI's Own Software Development Team** - 100+ specialized AI agents for complete software engineering.
 
 ![Supercoder](https://img.shields.io/badge/Supercoder-AI%20Team-blue)
-![Version](https://img.shields.io/badge/Version-1.0.0-green)
+![Version](https://img.shields.io/badge/Version-1.1.0-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+![Skills](https://img.shields.io/badge/Skills-95-brightgreen)
 
 ## What is Supercoder?
 
-Supercoder gives any AI coding agent a complete software development team with 92 specialized skills. It works with **Codex, Claude Code, Cursor, Windsurf, OpenCode, Gemini CLI, Trae, Continue, VS Code**, and more.
+Supercoder gives any AI coding agent a complete software development team with **95+ specialized skills**. It works with **Codex, Claude Code, Cursor, Windsurf, OpenCode, Gemini CLI, Trae, Continue, VS Code**, and more.
 
-## Quick Install
+## Key Features
+
+- **95+ Skills** - From Python to Game Dev to SWE Pro
+- **Subagent Switching** - Delegate to specialized agents
+- **Team Memory** - Agents talk to each other via shared memory
+- **Skill Auto-Detection** - AI loads relevant skills automatically
+- **NPM Install** - `npm install -g supercoder-codex`
+
+## Quick Install (NPM - Recommended)
+
+```bash
+# Install for specific AI agent
+npm install -g supercoder-codex    # Codex CLI
+npm install -g supercoder-claude   # Claude Code
+npm install -g supercoder-gemini   # Gemini CLI
+npm install -g supercoder-trae     # Trae
+npm install -g supercoder          # All agents (default)
+
+# Or use npx
+npx supercoder-codex install
+```
+
+## Manual Install
 
 ```bash
 # Clone the repository
@@ -20,26 +43,24 @@ git clone https://github.com/aniketjha348/Supercoder.git Supercoder
 cd Supercoder
 node bin/supercoder.js install codex     # Codex CLI
 node bin/supercoder.js install claude    # Claude Code
-node bin/supercoder.js install cursor   # Cursor
-node bin/supercoder.js install windsurf # Windsurf
-node bin/supercoder.js install all      # All agents!
+node bin/supercoder.js install cursor    # Cursor
+node bin/supercoder.js install windsurf  # Windsurf
+node bin/supercoder.js install all       # All agents!
 ```
 
-## Installation per AI Agent
+## NPM Installation per Agent
 
-| Agent | Command |
-|-------|---------|
-| Codex | `node bin/supercoder.js install codex` |
-| Claude Code | `node bin/supercoder.js install claude` |
-| OpenCode | `node bin/supercoder.js install opencode` |
-| Cursor | `node bin/supercoder.js install cursor` |
-| Windsurf | `node bin/supercoder.js install windsurf` |
-| Gemini CLI | `node bin/supercoder.js install gemini` |
-| Trae | `node bin/supercoder.js install trae` |
-| Continue | `node bin/supercoder.js install continue` |
-| VS Code | `node bin/supercoder.js install vscode` |
+> Note: `npm install -g supercoder@codex` installs version "codex" (not a subpackage). Use the format below for agent-specific installation.
 
-## Available Skills (92 Total)
+| Package | Agent | Install Command |
+|---------|-------|-----------------|
+| `supercoder-codex` | Codex | `npm install -g supercoder-codex` |
+| `supercoder-claude` | Claude Code | `npm install -g supercoder-claude` |
+| `supercoder-gemini` | Gemini CLI | `npm install -g supercoder-gemini` |
+| `supercoder-trae` | Trae | `npm install -g supercoder-trae` |
+| `supercoder` | All | `npm install -g supercoder` |
+
+## Available Skills (100+ Total)
 
 ### Process Skills (11) - HOW to Work
 These define the development workflow:
@@ -80,36 +101,67 @@ These define the development workflow:
 | **supercoder-tool-ui** | Display and statusline |
 | **supercoder-tool-voice** | Voice input processing |
 
-### Domain Skills (63) - WHAT to Build
+### Domain Skills (71+) - WHAT to Build
 | Category | Skills |
 |----------|--------|
 | **Languages** | python, go, java, typescript, rust, cpp |
 | **Frameworks** | django, fastapi, spring, react, vue, angular |
 | **Databases** | sql, nosql, graphdb, vector, timeseries |
-| **Cloud** | kubernetes, terraform, docker |
-| **AI/ML** | llm, rag, ml, mlops, memory |
+| **Cloud** | kubernetes, terraform, docker, aws, gcp, azure |
+| **AI/ML** | llm, rag, ml, mlops, memory, ai |
+| **Mobile** | mobile, flutter, react-native |
+| **Game Dev** | game-dev |
 | **Security** | security, pentest, cryptography |
 | **Quality** | tester, reviewer, debugger, performance |
 | **Operations** | devops, sre, monitor, incident |
+| **Roles** | sde, swe, swe-pro, swe-expert, fullstack, cloud-dev, game-dev, software-dev |
 | **Process** | product, scrum, requirements, analyst |
 
-## The Complete Workflow
+## New: Subagent Switching & Team Communication
 
+### Delegate to Subagents
 ```
-User Request → brainstorming → writing-plans → 
-test-driven-development → executing-plans → 
-verification → requesting-code-review → 
-receiving-code-review → finishing-branch
+@supercoder-python: Write a data processing function
+@supercoder-frontend: Build a React component
+@supercoder-db: Design the database
 ```
+
+### Shared Memory (Agents Talk to Each Other)
+```javascript
+// Frontend stores UI spec
+teamMemory.write('ui_spec', { components: [...] });
+
+// Backend reads it and builds API
+const ui = teamMemory.read('ui_spec');
+```
+
+See `skills/supercoder-subagent-switching` and `skills/supercoder-team-memory` for details.
+
+## Skill Auto-Detection
+
+Supercoder includes a **manifest.json** that allows AI to automatically detect and load relevant skills based on your request. When you ask for help with a specific task, the AI will:
+
+1. Read `skills/manifest.json`
+2. Match keywords in your request
+3. Load the appropriate skill(s) automatically
+
+Example: "Build a REST API with authentication" → loads **fastapi** + **security** skills
 
 ## CLI Commands
 
 ```bash
-supercoder install codex    # Install for specific agent
-supercoder install all     # Install for all agents
-supercoder list            # List supported agents
-supercoder clean           # Remove from all agents
-supercoder doctor          # Check health
+# NPM installed packages
+supercoder-codex install     # Install for Codex
+supercoder-claude install    # Install for Claude
+supercoder-gemini install    # Install for Gemini
+supercoder-trae install      # Install for Trae
+
+# Manual (from repo)
+node bin/supercoder.js install codex    # Install for specific agent
+node bin/supercoder.js install all      # Install for all agents
+node bin/supercoder.js list             # List supported agents
+node bin/supercoder.js clean            # Remove from all agents
+node bin/supercoder.js doctor           # Check health
 ```
 
 ## Project Structure
@@ -117,16 +169,23 @@ supercoder doctor          # Check health
 ```
 Supercoder/
 ├── bin/
-│   └── supercoder.js      # Main CLI
+│   └── supercoder.js          # Main CLI
 ├── skills/
-│   └── supercoder/        # 92 skills
+│   ├── manifest.json          # Skill auto-detection manifest
+│   └── supercoder/            # 100+ skills
 │       ├── supercoder-brainstorming/
 │       ├── supercoder-tool-*/
-│       └── supercoder-python/
-├── .codex/                # Codex installation
-├── .claude/               # Claude Code installation
-├── .cursor-plugin/       # Cursor installation
-├── .opencode/             # OpenCode installation
+│       ├── supercoder-python/
+│       ├── supercoder-aws/
+│       ├── supercoder-gcp/
+│       ├── supercoder-azure/
+│       └── ...
+├── packages/                  # NPM scoped packages
+│   ├── supercoder-codex/
+│   ├── supercoder-claude/
+│   ├── supercoder-gemini/
+│   └── supercoder-trae/
+├── docs/                      # Documentation
 ├── package.json
 └── README.md
 ```
@@ -136,6 +195,21 @@ Supercoder/
 Start a new session with your AI agent and ask:
 
 > "What tools do you have available?"
+
+You should see Supercoder skills listed.
+
+## AI Auto-Detection Example
+
+When the AI needs to help you, it reads `skills/manifest.json` to find relevant skills:
+
+```
+User: "Build a Flutter app with AWS backend"
+
+AI loads:
+- supercoder-flutter (keyword: flutter)
+- supercoder-aws (keyword: aws)
+- supercoder-mobile (keyword: app)
+```
 
 ## License
 

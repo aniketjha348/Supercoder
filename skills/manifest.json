@@ -1,0 +1,127 @@
+{
+  "version": "1.1.0",
+  "totalSkills": 95,
+  "categories": {
+    "process": {
+      "description": "Development workflow skills",
+      "skills": [
+        "brainstorming", "writing-plans", "test-driven-development", "executing-plans",
+        "systematic-debugging", "verification-before-completion", "receiving-code-review",
+        "requesting-code-review", "subagent-driven-development", "dispatching-parallel-agents",
+        "finishing-a-development-branch", "subagent-switching", "team-memory"
+      ]
+    },
+    "tool": {
+      "description": "File and system operations",
+      "skills": [
+        "tool-file-ops", "tool-agent", "tool-vim", "tool-system", "tool-memory",
+        "tool-reference", "tool-assistant", "tool-bridge", "tool-hooks", "tool-cli",
+        "tool-services", "tool-keybindings", "tool-screens", "tool-remote", "tool-plugins",
+        "tool-state", "tool-ui", "tool-voice"
+      ]
+    },
+    "languages": {
+      "description": "Programming languages",
+      "skills": ["python", "go", "java", "typescript", "rust", "cpp"]
+    },
+    "frameworks": {
+      "description": "Web frameworks",
+      "skills": ["django", "fastapi", "spring", "react", "vue", "angular"]
+    },
+    "databases": {
+      "description": "Database technologies",
+      "skills": ["sql", "nosql", "graphdb", "vector", "timeseries"]
+    },
+    "cloud": {
+      "description": "Cloud and infrastructure",
+      "skills": ["kubernetes", "terraform", "docker", "aws", "gcp", "azure", "cloud-dev"]
+    },
+    "ai-ml": {
+      "description": "AI and machine learning",
+      "skills": ["llm", "rag", "ml", "mlops", "memory", "ai"]
+    },
+    "mobile": {
+      "description": "Mobile development",
+      "skills": ["mobile", "flutter", "react-native"]
+    },
+    "game": {
+      "description": "Game development",
+      "skills": ["game-dev"]
+    },
+    "security": {
+      "description": "Security",
+      "skills": ["security", "pentest", "cryptography"]
+    },
+    "quality": {
+      "description": "Code quality and testing",
+      "skills": ["tester", "reviewer", "debugger", "performance"]
+    },
+    "operations": {
+      "description": "DevOps and operations",
+      "skills": ["devops", "sre", "monitor", "incident"]
+    },
+    "roles": {
+      "description": "Career path roles",
+      "skills": ["sde", "swe", "swe-pro", "swe-expert", "fullstack", "cloud-dev", "game-dev", "software-dev"]
+    },
+    "business": {
+      "description": "Product and project management",
+      "skills": ["product", "scrum", "requirements", "analyst"]
+    }
+  },
+  "keywords": {
+    "python": ["python", "data science", "automation", "scripting", "pandas", "numpy"],
+    "javascript": ["javascript", "js", "node", "frontend"],
+    "typescript": ["typescript", "ts", "typed javascript"],
+    "react": ["react", "reactjs", "frontend", "ui", "components"],
+    "vue": ["vue", "vuejs", "frontend"],
+    "angular": ["angular", "frontend"],
+    "django": ["django", "python web", "python backend"],
+    "fastapi": ["fastapi", "python api", "python backend"],
+    "spring": ["spring", "java backend", "java enterprise"],
+    "database": ["database", "sql", "query", "schema"],
+    "sql": ["sql", "database", "query"],
+    "nosql": ["nosql", "mongodb", "cassandra", "dynamodb"],
+    "graphdb": ["graph", "neo4j", "knowledge graph"],
+    "vector": ["vector database", "pinecone", "weaviate", "milvus", "ai storage"],
+    "docker": ["docker", "container", "containerization"],
+    "kubernetes": ["kubernetes", "k8s", "orchestration"],
+    "terraform": ["terraform", "iac", "infrastructure"],
+    "aws": ["aws", "amazon", "ec2", "s3", "lambda", "cloud"],
+    "gcp": ["gcp", "google cloud", "compute engine", "cloud storage"],
+    "azure": ["azure", "microsoft cloud", "virtual machine", "blob"],
+    "llm": ["llm", "openai", "gpt", "language model", "ai"],
+    "rag": ["rag", "retrieval", "augmented generation", "ai"],
+    "ml": ["machine learning", "ml", "ai model", "training"],
+    "mlops": ["mlops", "ml pipeline", "model deployment"],
+    "ai": ["ai", "artificial intelligence", "ai app", "ai agent"],
+    "mobile": ["mobile", "ios", "android", "app"],
+    "flutter": ["flutter", "dart", "cross-platform mobile"],
+    "react-native": ["react native", "rn", "cross-platform mobile"],
+    "game-dev": ["game", "gaming", "unity", "unreal", "game development"],
+    "security": ["security", "audit", "vulnerability"],
+    "pentest": ["penetration testing", "pentest", "security testing"],
+    "cryptography": ["encryption", "crypto", "digital signatures"],
+    "tester": ["test", "testing", "qa", "quality"],
+    "reviewer": ["review", "code review", "quality"],
+    "debugger": ["debug", "bug", "fix", "troubleshoot"],
+    "performance": ["performance", "optimization", "speed"],
+    "devops": ["devops", "ci/cd", "deployment"],
+    "sre": ["sre", "reliability", "slo"],
+    "monitor": ["monitoring", "alert", "observability"],
+    "incident": ["incident", "outage", "response"],
+    "sde": ["sde", "software development engineer", "interview", "dsa", "algorithm"],
+    "swe": ["swe", "software engineer", "production", "code"],
+    "swe-pro": ["swe pro", "senior staff", "principal", "architecture", "leadership"],
+    "swe-expert": ["distinguished", "technical fellow", "vp"],
+    "fullstack": ["fullstack", "frontend", "backend", "mern", "mean"],
+    "cloud-dev": ["cloud developer", "cloud-native", "serverless"],
+    "software-dev": ["software developer", "generalist"],
+    "product": ["product", "roadmap", "strategy"],
+    "scrum": ["scrum", "agile", "sprint"],
+    "requirements": ["requirements", "spec", "documentation"],
+    "analyst": ["analysis", "data analysis", "business"],
+    "subagent-switching": ["delegate", "subagent", "switch agent", "orchestrate"],
+    "team-memory": ["shared memory", "team communication", "inter-agent"]
+  }
+}

@@ -65,6 +65,14 @@ function getAgentFromArgs() {
     return process.env.npm_config_target;
   }
   
+  const npmPkg = process.env.npm_package_name || '';
+  if (npmPkg.includes('-')) {
+    const agent = npmPkg.split('-').pop();
+    if (agent && SUPPORTED_AI[agent.toLowerCase()]) {
+      return agent.toLowerCase();
+    }
+  }
+  
   return process.env.SUPERCODER_AGENT || null;
 }
 
@@ -245,8 +253,9 @@ Quick Start:
     const ai = args[1] || 'all';
     install(ai);
     break;
+  case 'npm-install':
   case 'i':
-    install(args[1] || 'all');
+    install(getAgentFromArgs() || 'all');
     break;
   case 'list':
   case 'ls':

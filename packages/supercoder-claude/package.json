@@ -1,0 +1,16 @@
+{
+  "name": "supercoder-claude",
+  "version": "1.1.0",
+  "description": "Supercoder for Claude Code - AI Development Team with 100+ skills",
+  "bin": {
+    "supercoder-claude": "../bin/supercoder.js"
+  },
+  "scripts": {
+    "postinstall": "node ../bin/supercoder.js install claude"
+  },
+  "keywords": ["supercoder", "claude", "claude-code", "ai-coding"],
+  "author": "aniketjha348",
+  "license": "MIT",
+  "homepage": "https://github.com/aniketjha348/Supercoder",
+  "engines": { "node": ">=18.0.0" }
+}

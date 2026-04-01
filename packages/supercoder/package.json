@@ -1,0 +1,23 @@
+{
+  "name": "supercoder",
+  "version": "1.1.0",
+  "description": "Your AI's own software development team - 100+ specialized AI agents",
+  "bin": {
+    "supercoder": "./bin/supercoder.js"
+  },
+  "scripts": {
+    "postinstall": "node bin/supercoder.js npm-install"
+  },
+  "keywords": [
+    "supercoder", "ai", "software-development", "agent", "team",
+    "codex", "claude-code", "cursor", "windsurf", "workflow", "tdd"
+  ],
+  "author": "aniketjha348",
+  "license": "MIT",
+  "homepage": "https://github.com/aniketjha348/Supercoder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aniketjha348/Supercoder.git"
+  },
+  "engines": { "node": ">=18.0.0" }
+}

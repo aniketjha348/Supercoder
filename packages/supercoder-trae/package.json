@@ -1,0 +1,19 @@
+{
+  "name": "@aniketjha348/supercoder-trae",
+  "version": "1.0.0",
+  "description": "Supercoder for Trae - AI Development Team with 100+ specialized skills",
+  "bin": {
+    "supercoder-trae": "../bin/supercoder.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "postinstall": "node ../bin/supercoder.js install trae"
+  },
+  "keywords": ["supercoder", "trae", "ai-coding", "development-team"],
+  "author": "aniketjha348",
+  "license": "MIT",
+  "homepage": "https://github.com/aniketjha348/Supercoder",
+  "engines": { "node": ">=18.0.0" }
+}
