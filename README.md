@@ -17,51 +17,53 @@ Supercoder gives any AI coding agent a complete software development team with *
 - **Subagent Switching** - Delegate to specialized agents
 - **Team Memory** - Agents talk to each other via shared memory
 - **Skill Auto-Detection** - AI loads relevant skills automatically
-- **NPM Install** - `npm install -g supercoder-codex`
+- **Git Clone + Symlink** - Install via git clone for your AI agent
 
-## Quick Install (NPM - Recommended)
+## Install (Git Clone + Symlink)
 
+### Codex CLI
 ```bash
-# Install for specific AI agent
-npm install -g supercoder-codex      # Codex CLI
-npm install -g supercoder-claude    # Claude Code
-npm install -g supercoder-opencode  # OpenCode
-npm install -g supercoder-cursor    # Cursor
-npm install -g supercoder-windsurf  # Windsurf
-npm install -g supercoder-gemini    # Gemini CLI
-npm install -g supercoder-trae      # Trae
-npm install -g supercoder           # All agents (default)
+git clone https://github.com/aniketjha348/Supercoder.git ~/.codex/supercoder
+mkdir -p ~/.agents/skills
+ln -s ~/.codex/supercoder/skills ~/.agents/skills/supercoder
 
-# Or use npx
-npx supercoder-codex install
+# Windows (PowerShell)
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills"
+cmd /c mklink /J "$env:USERPROFILE\.agents\skills\supercoder" "$env:USERPROFILE\.codex\supercoder\skills"
 ```
 
-## Manual Install
+### OpenCode
+Add to your `opencode.json`:
+```json
+{
+  "plugin": ["supercoder@git+https://github.com/aniketjha348/Supercoder.git"]
+}
+```
 
+### Claude Code
 ```bash
-# Clone the repository
-git clone https://github.com/aniketjha348/Supercoder.git Supercoder
+git clone https://github.com/aniketjha348/Supercoder.git ~/.claude/supercoder
+mkdir -p ~/.agents/skills
+ln -s ~/.claude/supercoder/skills ~/.agents/skills/supercoder
+```
 
-# Install for specific AI agent
+### Cursor
+```bash
+git clone https://github.com/aniketjha348/Supercoder.git ~/.cursor/extensions/supercoder
+ln -s ~/.cursor/extensions/supercoder/skills ~/.agents/skills/supercoder
+```
+
+### Manual Install (Node)
+```bash
+git clone https://github.com/aniketjha348/Supercoder.git Supercoder
 cd Supercoder
 node bin/supercoder.js install codex     # Codex CLI
 node bin/supercoder.js install claude    # Claude Code
+node bin/supercoder.js install opencode  # OpenCode
 node bin/supercoder.js install cursor    # Cursor
 node bin/supercoder.js install windsurf  # Windsurf
 node bin/supercoder.js install all       # All agents!
 ```
-
-## NPM Installation per Agent
-
-> Note: `npm install -g supercoder@codex` installs version "codex" (not a subpackage). Use the format below for agent-specific installation.
-
-| Package | Agent | Install Command |
-|---------|-------|-----------------|
-| `supercoder-codex` | Codex | `npm install -g supercoder-codex` |
-| `supercoder-claude` | Claude Code | `npm install -g supercoder-claude` |
-| `supercoder-gemini` | Gemini CLI | `npm install -g supercoder-gemini` |
-| `supercoder-trae` | Trae | `npm install -g supercoder-trae` |
-| `supercoder` | All | `npm install -g supercoder` |
 
 ## Available Skills (100+ Total)
 
@@ -153,13 +155,7 @@ Example: "Build a REST API with authentication" → loads **fastapi** + **securi
 ## CLI Commands
 
 ```bash
-# NPM installed packages
-supercoder-codex install     # Install for Codex
-supercoder-claude install    # Install for Claude
-supercoder-gemini install    # Install for Gemini
-supercoder-trae install      # Install for Trae
-
-# Manual (from repo)
+# From repo (git clone)
 node bin/supercoder.js install codex    # Install for specific agent
 node bin/supercoder.js install all      # Install for all agents
 node bin/supercoder.js list             # List supported agents

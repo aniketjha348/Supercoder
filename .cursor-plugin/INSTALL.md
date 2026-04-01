@@ -1,40 +1,40 @@
-# Installing Supercoder for Codex
+# Installing Supercoder for Cursor
 
 ## Prerequisites
 
-- [Codex CLI](https://codex.so) installed
+- [Cursor](https://cursor.sh) IDE installed
 - Git
 
 ## Installation
 
 ### Option 1: Plugin (Recommended)
 
-Clone the repo to Codex plugins folder:
+Clone the repo to extensions folder:
 
 ```bash
-git clone https://github.com/aniketjha348/Supercoder.git ~/.codex/supercoder
+git clone https://github.com/aniketjha348/Supercoder.git ~/.cursor/extensions/supercoder
 ```
 
 ### Option 2: Symlink (Alternative)
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/aniketjha348/Supercoder.git ~/.codex/supercoder
+   git clone https://github.com/aniketjha348/Supercoder.git ~/.cursor/extensions/supercoder
    ```
 
 2. **Create the skills symlink:**
    ```bash
    mkdir -p ~/.agents/skills
-   ln -s ~/.codex/supercoder/skills ~/.agents/skills/supercoder
+   ln -s ~/.cursor/extensions/supercoder/skills ~/.agents/skills/supercoder
    ```
 
    **Windows (PowerShell):**
    ```powershell
    New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills"
-   cmd /c mklink /J "$env:USERPROFILE\.agents\skills\supercoder" "$env:USERPROFILE\.codex\supercoder\skills"
+   cmd /c mklink /J "$env:USERPROFILE\.agents\skills\supercoder" "$env:USERPROFILE\.cursor\extensions\supercoder\skills"
    ```
 
-3. **Restart Codex** to discover the skills.
+3. **Restart Cursor** to discover the skills.
 
 ## Verify
 
@@ -47,7 +47,7 @@ You should see a symlink (or junction on Windows) pointing to your supercoder sk
 ## Updating
 
 ```bash
-cd ~/.codex/supercoder && git pull
+cd ~/.cursor/extensions/supercoder && git pull
 ```
 
 Skills update instantly through the symlink.
@@ -58,4 +58,4 @@ Skills update instantly through the symlink.
 rm ~/.agents/skills/supercoder
 ```
 
-Optionally delete the clone: `rm -rf ~/.codex/supercoder`.
+Optionally delete the clone: `rm -rf ~/.cursor/extensions/supercoder`.

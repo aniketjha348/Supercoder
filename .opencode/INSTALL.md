@@ -9,41 +9,58 @@ Enable supercoder skills via native skill discovery. Just clone and symlink.
 
 ## Installation
 
-### Quick Install
+### Option 1: NPM Install (Recommended)
 
 ```bash
-npm install -g supercoder
-supercoder install opencode
+npm install -g supercoder-opencode
 ```
 
-### Manual Install (Clone + Symlink)
+This will automatically set up the skills for OpenCode.
 
-1. **Clone the supercoder repository:**
-   ```bash
-   git clone https://github.com/aniketjha348/supercoder.git ~/.opencode/supercoder
-   ```
+### Option 2: Manual Install (Clone + Symlink)
 
-2. **Create the skills symlink:**
-   ```powershell
-   New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\opencode\skills"
-   cmd /c mklink /J "$env:USERPROFILE\.config\opencode\skills\supercoder" "$env:USERPROFILE\.opencode\supercoder\skills"
-   ```
+#### Step 1: Clone the repository
 
-   **Linux/Mac:**
-   ```bash
-   mkdir -p ~/.config/opencode/skills
-   ln -sf ~/.opencode/supercoder/skills ~/.config/opencode/skills/supercoder
-   ```
+```bash
+git clone https://github.com/aniketjha348/Supercoder.git ~/.opencode/supercoder
+```
 
-3. **Restart OpenCode** to discover the skills.
+#### Step 2: Create the skills directory and symlink
 
-## Verify
-
+**Windows (PowerShell):**
 ```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\opencode\skills"
+cmd /c mklink /J "$env:USERPROFILE\.config\opencode\skills\supercoder" "$env:USERPROFILE\.opencode\supercoder\skills"
+```
+
+**Windows (CMD):**
+```cmd
+mkdir "%USERPROFILE%\.config\opencode\skills"
+mklink /J "%USERPROFILE%\.config\opencode\skills\supercoder" "%USERPROFILE%\.opencode\supercoder\skills"
+```
+
+**Linux/Mac:**
+```bash
+mkdir -p ~/.config/opencode/skills
+ln -sf ~/.opencode/supercoder/skills ~/.config/opencode/skills/supercoder
+```
+
+#### Step 3: Restart OpenCode
+
+Close and reopen OpenCode to discover the new skills.
+
+## Verify Installation
+
+```bash
 ls -la ~/.config/opencode/skills/supercoder
 ```
 
-You should see a symlink (or junction on Windows) pointing to your supercoder skills directory.
+You should see a symlink (or junction on Windows) pointing to your Supercoder skills directory.
+
+Or start a new session and ask the AI:
+> "What skills do you have available?"
+
+You should see Supercoder skills listed.
 
 ## Updating
 
@@ -53,10 +70,34 @@ cd ~/.opencode/supercoder && git pull
 
 Skills update instantly through the symlink.
 
+## Troubleshooting
+
+### Skills not appearing?
+
+1. Check symlink exists: `ls -la ~/.config/opencode/skills/`
+2. Verify skills folder has content: `ls ~/.opencode/supercoder/skills/`
+3. Restart OpenCode completely
+4. Try creating a new conversation
+
+### Symlink not working on Windows?
+
+Use Junction instead:
+```powershell
+cmd /c mklink /J "path\to\link" "path\to\target"
+```
+
+Or use PowerShell:
+```powershell
+New-Item -ItemType Junction -Path "link" -Target "target"
+```
+
 ## Uninstalling
 
 ```bash
 rm ~/.config/opencode/skills/supercoder
 ```
 
-Optionally delete the clone: `rm -rf ~/.opencode/supercoder`.
+Optional: Delete the clone:
+```bash
+rm -rf ~/.opencode/supercoder
+```

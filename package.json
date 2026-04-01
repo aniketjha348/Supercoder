@@ -1,6 +1,6 @@
 {
-  "name": "@aniketjha348/supercoder",
-  "version": "1.0.0",
+  "name": "supercoder",
+  "version": "1.1.0",
   "description": "Your AI's own software development team - 100+ specialized AI agents for complete software engineering",
   "bin": {
     "supercoder": "./bin/supercoder.js"
