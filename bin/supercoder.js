@@ -71,6 +71,16 @@ function getAgentFromArgs() {
     if (agent && SUPPORTED_AI[agent.toLowerCase()]) {
       return agent.toLowerCase();
     }
+    // Handle scoped packages like @username/supercoder-codex
+    if (npmPkg.includes('@')) {
+      const parts = npmPkg.split('/');
+      if (parts.length === 2) {
+        const scopedAgent = parts[1].split('-').pop();
+        if (scopedAgent && SUPPORTED_AI[scopedAgent.toLowerCase()]) {
+          return scopedAgent.toLowerCase();
+        }
+      }
+    }
   }
   
   return process.env.SUPERCODER_AGENT || null;
@@ -222,10 +232,14 @@ Commands:
 Examples:
   supercoder install codex
   supercoder install claude
+  supercoder install opencode
   supercoder install cursor
   supercoder install all
   supercoder list
   supercoder clean
+
+  npm install -g supercoder-codex     # Install for Codex
+  npm install -g supercoder-opencode  # Install for OpenCode
 
 Supported AI Agents:
   - claude       (Claude Code)

@@ -23,11 +23,14 @@ Supercoder gives any AI coding agent a complete software development team with *
 
 ```bash
 # Install for specific AI agent
-npm install -g supercoder-codex    # Codex CLI
-npm install -g supercoder-claude   # Claude Code
-npm install -g supercoder-gemini   # Gemini CLI
-npm install -g supercoder-trae     # Trae
-npm install -g supercoder          # All agents (default)
+npm install -g supercoder-codex      # Codex CLI
+npm install -g supercoder-claude    # Claude Code
+npm install -g supercoder-opencode  # OpenCode
+npm install -g supercoder-cursor    # Cursor
+npm install -g supercoder-windsurf  # Windsurf
+npm install -g supercoder-gemini    # Gemini CLI
+npm install -g supercoder-trae      # Trae
+npm install -g supercoder           # All agents (default)
 
 # Or use npx
 npx supercoder-codex install
