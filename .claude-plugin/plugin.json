@@ -1,0 +1,19 @@
+{
+  "name": "supercoder",
+  "description": "Your AI's own software development team - 29+ specialized AI agents",
+  "version": "1.0.0",
+  "author": {
+    "name": "instructkr",
+    "email": "contact@instruct.kr"
+  },
+  "homepage": "https://github.com/instructkr/supercoder",
+  "repository": "https://github.com/instructkr/supercoder",
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "software-development",
+    "agent",
+    "team",
+    "claude-code"
+  ]
+}

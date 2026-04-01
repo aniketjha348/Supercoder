@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "description": "Your AI's own software development team",
+  "author": {
+    "name": "instructkr",
+    "email": "contact@instruct.kr"
+  },
+  "homepage": "https://github.com/instructkr/supercoder",
+  "repository": "https://github.com/instructkr/supercoder",
+  "skills": [
+    "supercoder-coordinator",
+    "supercoder-requirements",
+    "supercoder-analyst",
+    "supercoder-architect",
+    "supercoder-ux",
+    "supercoder-database",
+    "supercoder-api",
+    "supercoder-security-arch",
+    "supercoder-developer",
+    "supercoder-frontend",
+    "supercoder-backend",
+    "supercoder-mobile",
+    "supercoder-data",
+    "supercoder-ml",
+    "supercoder-tester",
+    "supercoder-reviewer",
+    "supercoder-security",
+    "supercoder-performance",
+    "supercoder-accessibility",
+    "supercoder-devops",
+    "supercoder-sre",
+    "supercoder-monitor",
+    "supercoder-incident",
+    "supercoder-debugger",
+    "supercoder-refactorer",
+    "supercoder-docs",
+    "supercoder-product",
+    "supercoder-scrum"
+  ]
+}
